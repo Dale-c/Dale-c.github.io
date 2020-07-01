@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 实例 - 简单的轮播（Carousel）插件</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./jquery/jquery.min.js"></script>
+</head>
+<style>
+  html,
+  body,
+  .box {
+    height: 100%;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    height: 0px;
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+
+  .header {
+    height: 100px;
+    background: red;
+  }
+
+  p {
+    height: 100px;
+  }
+
+  .footer {
+    height: 100px;
+    background: blue;
+  }
+</style>
+
+<body>
+
+
+  <div class="box">
+    <div class="header">header</div>
+    <div class="main">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+
+</body>
+
+</html>
