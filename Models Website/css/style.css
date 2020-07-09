@@ -369,6 +369,7 @@
     text-align: center;
     background: url(../img/bg3.jpg) no-repeat center;
     background-size: cover;
+    width: 100%;
     min-height: 400px;
   }
   .newsletter .container .row {
@@ -409,6 +410,7 @@
     cursor: pointer;
     padding: 15px;
   }
+
   /* ----------contace------------ */
   .contace {
     padding: 48px 0;
@@ -471,6 +473,7 @@
     border-bottom: solid 1px #828282;
     -webkit-appearance: none;
     border-radius: 0px;
+    resize:none; 
   }
   .contace .right input.submit {
     border: none;
