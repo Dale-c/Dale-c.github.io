@@ -368,6 +368,7 @@
     padding: 48px 0;
     text-align: center;
     background: url(../img/bg3.jpg) no-repeat center;
+    background-size: cover;
     min-height: 400px;
   }
   .newsletter .container .row {
