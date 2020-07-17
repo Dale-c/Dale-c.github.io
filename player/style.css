@@ -1,0 +1,233 @@
+body {
+  background: lightblue;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+body .stage {
+  width: 550px;
+}
+body .stage audio {
+  display: none;
+}
+body .stage .card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  overflow: hidden;
+  height: 130px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  padding: 25px;
+  position: relative;
+}
+body .stage .card .mask {
+  position: absolute;
+  border: 1px solid red;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  background-image: url(https://p2.music.126.net/yWtj0UXRJBCT9YI7csmAcw==/109951164190741294.jpg);
+  background-position: center;
+  -webkit-filter: blur(5px) brightness(0.7) contrast(1.2);
+          filter: blur(5px) brightness(0.7) contrast(1.2);
+  z-index: -1;
+}
+body .stage .card .glue {
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  background: url("cd.png");
+  -moz-background-size: cover;
+       background-size: cover;
+  padding: 25px;
+  -webkit-animation: myrotate linear 3s infinite;
+     -moz-animation: myrotate linear 3s infinite;
+       -o-animation: myrotate linear 3s infinite;
+          animation: myrotate linear 3s infinite;
+  -webkit-animation-play-state: paused;
+     -moz-animation-play-state: paused;
+       -o-animation-play-state: paused;
+          animation-play-state: paused;
+}
+body .stage .card .glue img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+body .stage .card .pointer {
+  width: 25px;
+  position: relative;
+  left: -15px;
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transform-origin: 14px 7px;
+     -moz-transform-origin: 14px 7px;
+      -ms-transform-origin: 14px 7px;
+       -o-transform-origin: 14px 7px;
+          transform-origin: 14px 7px;
+  left: -10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .stage .card .pointer img {
+  width: 100%;
+}
+body .stage .card .info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 10px;
+}
+body .stage .card .info .top {
+  margin-bottom: 15px;
+}
+body .stage .card .info .top h3 {
+  margin: 0;
+}
+body .stage .card .info .top p {
+  margin: 10px 0 0 0;
+}
+body .stage .card .info .bottom {
+  padding: 0 5px;
+}
+body .stage .card .info .bottom .btn {
+  color: white;
+  padding-bottom: 15px;
+}
+body .stage .card .info .bottom .btn i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+body .stage .card .info .bottom .progress {
+  background: #fff;
+  position: relative;
+  height: 5px;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+body .stage .card .info .bottom .progress input {
+  width: 100%;
+  position: relative;
+  top: -5px;
+  z-index: 1;
+  opacity: 0;
+}
+body .stage .card .info .bottom .progress .slider {
+  background: #333;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  z-index: 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+body .stage .card .info .bottom .time {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  width: 40px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+body .stage .card .info .bottom .nowtime {
+  float: left;
+}
+body .stage .card .info .bottom .totaltime {
+  float: right;
+}
+body .stage.playing .card .glue {
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+}
+body .stage.playing .card .pointer {
+  -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+@-webkit-keyframes myrotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-moz-keyframes myrotate {
+  from {
+    -moz-transform: rotate(0deg);
+         transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+         transform: rotate(360deg);
+  }
+}
+@-o-keyframes myrotate {
+  from {
+    -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+       transform: rotate(360deg);
+  }
+}
+@keyframes myrotate {
+  from {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=./style.css.map */
