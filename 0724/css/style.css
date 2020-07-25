@@ -1,0 +1,285 @@
+body ul,
+body li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.wrapper h4 {
+  padding: 0 10px;
+}
+.wrapper ul.nav-tabs li {
+  text-align: center;
+  background-color: #dfdcd9;
+}
+.wrapper ul.nav-tabs li a {
+  color: #333;
+}
+.wrapper .tab-content {
+  padding: 0 10px;
+}
+.wrapper .tab-content #home .epidemic .statistics {
+  padding: 20px 0;
+}
+.wrapper .tab-content #home .epidemic .statistics .addUp li,
+.wrapper .tab-content #home .epidemic .statistics .nowHave li {
+  text-align: center;
+}
+.wrapper .tab-content #home .epidemic .statistics .addUp li h5,
+.wrapper .tab-content #home .epidemic .statistics .nowHave li h5 {
+  font-weight: bold;
+}
+.wrapper .tab-content #home .epidemic .statistics .addUp li h3,
+.wrapper .tab-content #home .epidemic .statistics .nowHave li h3 {
+  color: #cc4101;
+  font-weight: bold;
+  margin-top: 0;
+}
+.wrapper .tab-content #home .epidemic .statistics .addUp li p,
+.wrapper .tab-content #home .epidemic .statistics .nowHave li p {
+  color: #adadad;
+  font-size: 12px;
+}
+.wrapper .tab-content #home .epidemic .statistics .addUp li p span,
+.wrapper .tab-content #home .epidemic .statistics .nowHave li p span {
+  color: #da855b;
+}
+.wrapper .tab-content #home .epidemic .details .nav-details li {
+  text-align: center;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown button {
+  width: 100%;
+  border: none;
+  height: 40px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  margin: 5px 0;
+  outline: none;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown button ul {
+  height: 100%;
+  position: relative;
+  min-height: 40px;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown button ul li {
+  height: 100%;
+  color: #333;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown button ul span {
+  position: absolute;
+  right: 5px;
+  top: 18px;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown ul {
+  width: 100%;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown ul li ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  height: 40px;
+}
+.wrapper .tab-content #home .epidemic .details .dropdown ul li ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #636363;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .tab-content .details .nav-details li {
+  text-align: center;
+}
+.wrapper .tab-content .details .dropdown button {
+  width: 100%;
+  border: none;
+  height: 40px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  margin: 5px 0;
+  outline: none;
+  padding: 0;
+}
+.wrapper .tab-content .details .dropdown button ul {
+  height: 100%;
+  position: relative;
+  min-height: 40px;
+}
+.wrapper .tab-content .details .dropdown button ul li {
+  height: 100%;
+  color: #333;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .tab-content .details .dropdown button ul span {
+  position: absolute;
+  right: 5px;
+  top: 18px;
+}
+.wrapper .tab-content .details .dropdown ul {
+  position: static;
+  width: 100%;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.wrapper .tab-content .details .dropdown ul li ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  height: 40px;
+}
+.wrapper .tab-content .details .dropdown ul li ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #636363;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .tab-content #messages .epidemic .messages {
+  padding: 20px 0;
+}
+.wrapper .tab-content #messages .epidemic .messages .addUp li,
+.wrapper .tab-content #messages .epidemic .messages .nowHave li {
+  text-align: center;
+}
+.wrapper .tab-content #messages .epidemic .messages .addUp li h5,
+.wrapper .tab-content #messages .epidemic .messages .nowHave li h5 {
+  font-weight: bold;
+}
+.wrapper .tab-content #messages .epidemic .messages .addUp li h3,
+.wrapper .tab-content #messages .epidemic .messages .nowHave li h3 {
+  color: #cc4101;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 18px;
+}
+.wrapper .tab-content #messages .epidemic .messages .addUp li p,
+.wrapper .tab-content #messages .epidemic .messages .nowHave li p {
+  color: #adadad;
+  font-size: 12px;
+}
+.wrapper .tab-content #messages .epidemic .messages .addUp li p span,
+.wrapper .tab-content #messages .epidemic .messages .nowHave li p span {
+  color: #da855b;
+}
+/*# sourceMappingURL=./style.css.map */

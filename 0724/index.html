@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>全球疫情播报</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h4>全球疫情播报</h4>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active internal"><a href="#home" aria-controls="home" role="tab"
+                        data-toggle="tab">国内疫情</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">海外疫情</a>
+                </li>
+                <li role="presentation" class="total"><a href="#messages" aria-controls="messages" role="tab"
+                        data-toggle="tab">全球疫情</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="epidemic">
+                        <div class="statistics">
+                        </div>
+                        <div class="details">
+                            <ul class="nav-details">
+                                <li>地区</li>
+                                <li>现有确诊</li>
+                                <li>累计确诊</li>
+                                <li>死亡</li>
+                                <li>治愈</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="details">
+                        <ul class="nav-details">
+                            <li>地区</li>
+                            <li>现有确诊</li>
+                            <li>累计确诊</li>
+                            <li>死亡</li>
+                            <li>治愈</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="epidemic">
+                        <div class="messages"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+
+</html>

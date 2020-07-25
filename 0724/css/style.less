@@ -1,0 +1,211 @@
+body {
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    display: flex;
+    li {
+      flex: 1;
+    }
+  }
+}
+.wrapper {
+  h4 {
+    padding: 0 10px;
+  }
+  ul.nav-tabs {
+    li {
+      text-align: center;
+      background-color: rgb(223, 220, 217);
+      a {
+        color: #333;
+      }
+    }
+  }
+  .tab-content {
+    padding: 0 10px;
+    #home {
+      .epidemic {
+        .statistics {
+          padding: 20px 0;
+          .addUp,
+          .nowHave {
+            li {
+              text-align: center;
+              h5 {
+                font-weight: bold;
+              }
+              h3 {
+                color: #cc4101;
+                font-weight: bold;
+                margin-top: 0;
+              }
+              p {
+                color: #adadad;
+                font-size: 12px;
+                span {
+                  color: #da855b;
+                }
+              }
+            }
+          }
+        }
+        .details {
+          .nav-details {
+            li {
+              text-align: center;
+            }
+          }
+          .dropdown {
+            button {
+              width: 100%;
+              border: none;
+              height: 40px;
+              border-radius: 15px;
+              margin: 5px 0;
+              outline: none;
+              ul {
+                height: 100%;
+                position: relative;
+                min-height: 40px;
+                //   justify-content: center;
+                //   align-items: center;
+                li {
+                  height: 100%;
+                  color: #333;
+                  padding: 0 5px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                }
+                span {
+                  position: absolute;
+                  right: 5px;
+                  top: 18px;
+                }
+              }
+            }
+            ul {
+              width: 100%;
+              box-shadow: none;
+              border: none;
+              li {
+                ul {
+                  display: flex;
+                  border-bottom: 1px solid #f1f1f1;
+                  height: 40px;
+                  li {
+                    flex: 1;
+                    text-align: center;
+                    color: #636363;
+                    float: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .details {
+      .nav-details {
+        li {
+          text-align: center;
+        }
+      }
+      .dropdown {
+        button {
+          width: 100%;
+          border: none;
+          height: 40px;
+          border-radius: 15px;
+          margin: 5px 0;
+          outline: none;
+          padding: 0;
+          ul {
+            height: 100%;
+            position: relative;
+            min-height: 40px;
+            //   justify-content: center;
+            //   align-items: center;
+            li {
+              height: 100%;
+              color: #333;
+              padding: 0 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+            span {
+              position: absolute;
+              right: 5px;
+              top: 18px;
+            }
+          }
+        }
+        ul {
+          position: static;
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          li {
+            ul {
+              display: flex;
+              border-bottom: 1px solid #f1f1f1;
+              height: 40px;
+              li {
+                flex: 1;
+                text-align: center;
+                color: #636363;
+                float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+    #messages {
+      .epidemic {
+        .messages {
+          padding: 20px 0;
+          .addUp,
+          .nowHave {
+            li {
+              text-align: center;
+              h5 {
+                font-weight: bold;
+              }
+              h3 {
+                color: #cc4101;
+                font-weight: bold;
+                margin-top: 0;
+                font-size: 18px;
+              }
+              p {
+                color: #adadad;
+                font-size: 12px;
+                span {
+                  color: #da855b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
