@@ -38,15 +38,15 @@ http
     let newslist = result.newslist;
     // console.log(newslist)
     let provname = query("#home .details")[0];
-    for (let key in newslist) {
+    for (let key in newslist) {//遍历数组 变量 对象
       let provinceName = newslist[key].provinceName;
       let currentConfirmedCount = newslist[key].currentConfirmedCount;
       let confirmedCount = newslist[key].confirmedCount;
       let deadCount = newslist[key].deadCount;
       let curedCount = newslist[key].curedCount;
       let cities = newslist[key].cities;
-      let dropdown = document.createElement("div");
-      dropdown.className = "dropdown";
+      let dropdown = document.createElement("div");//createElement 创建元素
+      dropdown.className = "dropdown";//类名
       dropdown.innerHTML += `
                         <button class="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -59,7 +59,7 @@ http
                                 <span class="caret"></span>
                             </ul>
                         </button>`;
-      provname.appendChild(dropdown);
+      provname.appendChild(dropdown);//添加子节点
 
       for (let key in cities) {
         // console.log(cities[key])
@@ -90,7 +90,7 @@ http1
   .get(
     "http://api.tianapi.com/txapi/ncovabroad/index?key=ef6635850a66ff0e8ee1fc5ec8c36fca"
   )
-  .then((result) => {
+  .then((result) => {//异步执行 .then()前的方法执行完后再执行then()内部的程序，这样就避免了，数据没获取到等的问题
     result = JSON.parse(result);
     // console.log("result ==> ", result);
     let newslist = result.newslist;
@@ -114,17 +114,21 @@ http1
     // console.log('continents ==> ', products);
     console.log('products ==> ', products);
     let provname = query("#profile .details")[0];
+
+    //累计总数
       let ljcurrentConfirmedCount = 0;
       let ljconfirmedCount = 0;
       let ljdeadCount = 0;
       let ljcuredCount = 0;
       
+      //各国总数
       let USconfirmedCount = 0;
       let BXconfirmedCount = 0;
       let YDconfirmedCount = 0;
       let ELSconfirmedCount = 0;
 
     for (let i = 0; i < type.length; i++) {
+      //各州总数
       let acurrentConfirmedCount = 0;
       let aconfirmedCount = 0;
       let adeadCount = 0;
@@ -140,10 +144,12 @@ http1
         let aaa = products[key]; 
         for (let i in aaa) {
           if (continent == aaa[i].continents) {
+
             acurrentConfirmedCount += aaa[i].currentConfirmedCount;
             aconfirmedCount += aaa[i].confirmedCount;
             adeadCount += aaa[i].deadCount;
             acuredCount += aaa[i].curedCount;
+
             ljcurrentConfirmedCount += aaa[i].currentConfirmedCount;
             ljconfirmedCount += aaa[i].confirmedCount;
             ljdeadCount += aaa[i].deadCount;
@@ -208,6 +214,7 @@ http1
     }
     
     // console.log("累计",ljconfirmedCount)
+    //全球数据
     let messagess = query(".messages")[0];
       messagess.innerHTML += `<ul class="addUp">
                         <li>
